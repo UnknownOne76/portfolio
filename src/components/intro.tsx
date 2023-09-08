@@ -1,0 +1,34 @@
+import rain from "@/images/rain.jpg";
+import Image from "next/image";
+
+interface IntroProps {
+  data: {
+    topic: string;
+  };
+}
+
+export const Introduction = ({ data }: IntroProps) => {
+  return (
+    <div
+      className={`w-full flex flex-col justify-start p-[4%] text-white select-none portrait:max-w-full`}
+    >
+      <div
+        className={`w-full flex justify-start items-center p-[4%] gap-2 portrait:relative`}
+      >
+        <Image
+          src={rain}
+          alt=""
+          className={`w-36 h-36 rounded-full portrait:w-16 portrait:h-16`}
+          priority={true}
+        />
+        <div
+          className={`w-[60%] flex text-center pl-[1%] portrait:w-full portrait:text-[9.5px] portrait:text-left`}
+        >
+          {data?.topic}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Introduction;
