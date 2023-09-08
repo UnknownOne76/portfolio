@@ -40,7 +40,7 @@ export const Header = ({data}: HeaderProps) => {
       <div className="w-full flex justify-end gap-5 m-5">
         <a className={`bg-black rounded-full hover:animate-pulse`} href={data?.fb?.url} target='_blank'><FaFacebook color="white" size={26}/></a>
         <a className='bg-black rounded-full hover:animate-pulse' href={data?.instag?.url} target='_blank'><FaInstagram color="white" size={26}/></a>
-        <Link className='rounded-full hover:animate-pulse' href={data?.wechat?.slug}><AiFillWechat color="white" size={26}/></Link>
+        <Link className='rounded-full hover:animate-pulse' href={`${data?.wechat?.slug}?id=4`}><AiFillWechat color="white" size={26}/></Link>
       </div>
     </div>
   );

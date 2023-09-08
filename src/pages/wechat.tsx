@@ -1,8 +1,21 @@
 import MainLayout from "@/components/layout/main";
-import { useState } from "react";
+import { usePageContext } from "@/contexts/pageContext";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export const WeChat = () => {
   const [copied, setCopied] = useState(false);
+  const router = useRouter();
+  const { id } = router?.query;
+  const { setId } = usePageContext();
+
+  useEffect(() => {
+    if (id) {
+      setId(id as string);
+    } else {
+      return;
+    }
+  }, [id]);
 
   const handleCopyClick = () => {
     const textToCopy = "kali-linux01";
