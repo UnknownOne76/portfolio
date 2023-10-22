@@ -12,7 +12,8 @@ import {
   BiLogoCss3,
   BiLogoMongodb,
   BiLogoFirebase,
-  BiLogoAws
+  BiLogoAws,
+  BiLogoTailwindCss
 } from "react-icons/bi";
 import { SiNextdotjs , SiServerless } from "react-icons/si";
 
@@ -48,9 +49,8 @@ export const TechSkills = () => {
         <div className={`w-full flex flex-col justify-start p-[5%] text-white font-bold`}>
           <div>NoSQL Databases:</div>
           <div
-            className={`w-[50%] grid grid-rows-2 grid-flow-col gap-10 pt-[2%] portrait:p-5 portrait:w-full`}
+            className={`w-[50%] grid grid-rows-1 portrait:grid-rows-2 grid-flow-col gap-10 pt-[2%] portrait:p-5 portrait:w-full`}
           >
-            <SiExpress size={65} color={"white"}/>
             <BiLogoMongodb size={65} color={"#589636"} className={"bg-white rounded-full"}/>
             <BiLogoFirebase size={65} color={"#FFA611"}/>
             <GrGraphQl size={65} color={"#e535ab"}/>
@@ -60,12 +60,14 @@ export const TechSkills = () => {
         <div className={`w-full flex flex-col justify-start p-[5%] text-white font-bold`}>
           <div>Frameworks:</div>
           <div
-            className={`w-[50%] grid grid-rows-1 grid-flow-col gap-2 pt-[2%] portrait:gap-8 portrait:p-5 portrait:grid-rows-2 portrait:w-full`}
+            className={`w-[50%] grid grid-rows-2 grid-flow-col gap-10 pt-[2%] portrait:gap-8 portrait:p-5 portrait:grid-rows-2 portrait:w-full`}
           >
             <FaReact size={65} color={"#61dbfb"}/>
+            <SiServerless size={65} color={"#fd5750"}/>
             <SiNextdotjs size={65} color={"white"}/>
             <SiStyledcomponents size={65} color={"white"}/>
-            <SiServerless size={65} color={"#fd5750"}/>
+            <SiExpress size={65} color={"white"}/>
+            <BiLogoTailwindCss size={65} color={"#01b7d6"}/>
           </div>
         </div>
       </div>

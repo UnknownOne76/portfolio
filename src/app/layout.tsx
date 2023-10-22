@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   icons: {
      icon: '/skull.ico'
   },
-  manifest: '/site.webmanifiest'
 }
 
 export default function RootLayout({
