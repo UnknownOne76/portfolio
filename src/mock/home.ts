@@ -36,7 +36,7 @@ export const HomeDatas = {
         'topics': [{ 'name': 'About Me', 'slug': '/' }, { 'name': 'Tech Skills', 'slug': '/tech' }, { 'name': 'Projects', 'slug': '/projects' }],
         'fb': { 'url': 'https://www.facebook.com/ganbold.gantor.771' },
         'instag': { 'url': 'https://www.instagram.com/gantor12' },
-        'wechat': { 'slug': '/wechat' }
+        'github': { 'url': 'https://github.com/UnknownOne76' }
     },
     'footer': {
         'context': 'Made with </> by UKN76',

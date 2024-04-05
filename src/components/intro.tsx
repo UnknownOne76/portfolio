@@ -1,5 +1,6 @@
 import rain from "@/images/rain.jpg";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface IntroProps {
   data: {
@@ -12,7 +13,10 @@ export const Introduction = ({ data }: IntroProps) => {
     <div
       className={`w-full flex flex-col justify-start p-[4%] text-white select-none portrait:max-w-full`}
     >
-      <div
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
         className={`w-full flex justify-start items-center p-[4%] gap-2 portrait:relative`}
       >
         <Image
@@ -26,7 +30,7 @@ export const Introduction = ({ data }: IntroProps) => {
         >
           {data?.topic}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
